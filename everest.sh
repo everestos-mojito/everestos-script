@@ -10,7 +10,7 @@ repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 /opt/crave/resync.sh
 
 # cloning device tree
-git clone https://github.com/everestos-mojito/device_xiaomi_mojito.git --depth 1 -b mojito-universe device/xiaomi/mojito
+git clone https://github.com/ProjectEverest-Devices/android_device_xiaomi_mojito.git --depth 1 -b 14 device/xiaomi/mojito
 git clone https://github.com/everestos-mojito/android_device_xiaomi_sm6150-common.git --depth 1 -b mojito-universe device/xiaomi/sm6150-common
 
 # cloning kernel tree
