@@ -23,6 +23,9 @@ git clone https://gitlab.com/bliss-mojito/android_vendor_xiaomi_sm6150-common.gi
 # cloning hardware tree
 git clone https://github.com/ProjectEverest-Devices/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
 
+# signing key for everestos
+git clone https://github.com/mojito-keys/vendor_lineage_signing.git --depth 1 -b main vendor/lineage
+
 # Set up the build environment
 . build/envsetup.sh
 
