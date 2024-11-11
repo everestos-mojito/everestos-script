@@ -8,7 +8,7 @@ rm -rf device/xiaomi/mojito
 rm -rf device/xiaomi/sm6150-common
 rm -rf kernel/xiaomi/mojito
 rm -rf vendor/xiaomi/sm6150-common
-rm -rf mojito hardware/xiaomi
+rm -rf hardware/xiaomi
 
 # Initialize ROM manifest
 repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
