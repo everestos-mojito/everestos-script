@@ -8,6 +8,12 @@ repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 
 # Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
+# remove device tree
+rm -rf device/xiaomi/mojito
+rm -rf device/xiaomi/sm6150-common
+rm -rf kernel/xiaomi/mojito
+rm -rf vendor/xiaomi/sm6150-common
+rm -rf mojito hardware/xiaomi
 
 # remove frameworks/native
 rm -rf frameworks/native
