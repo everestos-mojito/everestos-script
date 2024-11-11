@@ -6,8 +6,11 @@ rm -rf .repo/local_manifests/
 # Initialize ROM manifest
 repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 
-# Sync the rpo with force to ensure a clean sync
+# Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
+
+# remove frameworks/native
+rm -rf frameworks/native
 
 # cloning device tree
 git clone https://github.com/ProjectEverest-Devices/android_device_xiaomi_mojito.git --depth 1 -b 14 device/xiaomi/mojito
@@ -22,6 +25,9 @@ git clone https://gitlab.com/bliss-mojito/android_vendor_xiaomi_sm6150-common.gi
 
 # cloning hardware tree
 git clone https://github.com/ProjectEverest-Devices/android_hardware_xiaomi.git --depth 1 -b mojito hardware/xiaomi
+
+# source patch
+git clone https://github.com/everestos-mojito/frameworks_native.git --depth 1 -b frameworks/native
 
 # signing key for everestos
 git clone https://github.com/mojito-keys/vendor_lineage_signing.git --depth 1 -b main vendor/lineage
